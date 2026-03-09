@@ -1,0 +1,23 @@
+version: 2
+
+sources:
+  - name: raw_whl
+    database: telco_demo
+    schema: raw_whl
+    tables:
+      - name: raw_partners
+        description: Raw partner/customer data with credit profiles
+      - name: raw_cdr_aggregates
+        description: Aggregated CDR data with reconciliation status
+      - name: raw_invoices
+        description: Raw invoice header data
+      - name: raw_invoice_lines
+        description: Raw invoice line items
+      - name: raw_payments
+        description: Raw payment transactions
+      - name: raw_disputes
+        description: Raw dispute records
+      - name: raw_rate_cards
+        description: Rate card reference data
+      - name: raw_fx_rates
+        description: Foreign exchange rates

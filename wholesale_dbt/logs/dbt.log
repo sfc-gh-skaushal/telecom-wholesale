@@ -1,0 +1,113 @@
+[0m14:27:55.329553 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108524d70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109433890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109433b10>]}
+
+
+============================== 14:27:55.335161 | 18d19d69-5172-423b-9f6a-a0df89e83309 ==============================
+[0m14:27:55.335161 [info ] [MainThread]: Running with dbt=1.10.13
+[0m14:27:55.336351 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'warn_error': 'None', 'no_print': 'None', 'use_experimental_parser': 'False', 'log_format': 'default', 'introspect': 'True', 'debug': 'False', 'empty': 'None', 'fail_fast': 'False', 'log_path': '/Users/siddharthkaushal/Demos/telecom wholesale/wholesale_dbt/logs', 'partial_parse': 'True', 'version_check': 'True', 'profiles_dir': '/Users/siddharthkaushal/.dbt', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt debug --profiles-dir /Users/siddharthkaushal/.dbt', 'log_cache_events': 'False', 'cache_selected_only': 'False', 'indirect_selection': 'eager', 'target_path': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'use_colors': 'True', 'printer_width': '80'}
+[0m14:27:55.360628 [info ] [MainThread]: dbt version: 1.10.13
+[0m14:27:55.361012 [info ] [MainThread]: python version: 3.13.5
+[0m14:27:55.361230 [info ] [MainThread]: python path: /opt/homebrew/Caskroom/miniconda/base/bin/python3.13
+[0m14:27:55.361427 [info ] [MainThread]: os info: macOS-26.3.1-arm64-arm-64bit-Mach-O
+[0m14:27:55.361615 [info ] [MainThread]: Using profiles dir at /Users/siddharthkaushal/.dbt
+[0m14:27:55.361776 [info ] [MainThread]: Using profiles.yml file at /Users/siddharthkaushal/.dbt/profiles.yml
+[0m14:27:55.361935 [info ] [MainThread]: Using dbt_project.yml file at /Users/siddharthkaushal/Demos/telecom wholesale/wholesale_dbt/dbt_project.yml
+[0m14:27:55.418499 [info ] [MainThread]: Configuration:
+[0m14:27:55.418812 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m14:27:55.419031 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m14:27:55.419209 [info ] [MainThread]: Required dependencies:
+[0m14:27:55.419497 [debug] [MainThread]: Executing "git --help"
+[0m14:27:55.459074 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:27:55.459651 [debug] [MainThread]: STDERR: "b''"
+[0m14:27:55.459831 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:27:55.460004 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m14:27:55.460160 [info ] [MainThread]: [31m1 check failed:[0m
+[0m14:27:55.460301 [info ] [MainThread]: dbt looked for a profiles.yml file in /Users/siddharthkaushal/.dbt/profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m14:27:55.478386 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.6045529, "process_in_blocks": "0", "process_kernel_time": 0.215669, "process_mem_max_rss": "114442240", "process_out_blocks": "0", "process_user_time": 0.706463}
+[0m14:27:55.478737 [debug] [MainThread]: Command `dbt debug` failed at 14:27:55.478665 after 0.61 seconds
+[0m14:27:55.479031 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1087acb00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1095c16d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1092daad0>]}
+[0m14:27:55.479302 [debug] [MainThread]: Flushing usage events
+[0m14:27:56.152867 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:28:29.263170 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103b10d70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a2f890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a2fb10>]}
+
+
+============================== 14:28:29.266234 | e468bbb3-e033-4fa8-9c18-3fb73079ead5 ==============================
+[0m14:28:29.266234 [info ] [MainThread]: Running with dbt=1.10.13
+[0m14:28:29.266568 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'introspect': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'log_path': '/Users/siddharthkaushal/Demos/telecom wholesale/wholesale_dbt/logs', 'partial_parse': 'True', 'profiles_dir': '/Users/siddharthkaushal/.dbt', 'no_print': 'None', 'log_cache_events': 'False', 'debug': 'False', 'fail_fast': 'False', 'cache_selected_only': 'False', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run --profiles-dir /Users/siddharthkaushal/.dbt', 'target_path': 'None', 'log_format': 'default', 'static_parser': 'True', 'printer_width': '80', 'use_colors': 'True', 'indirect_selection': 'eager', 'warn_error': 'None'}
+[0m14:28:31.623433 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e468bbb3-e033-4fa8-9c18-3fb73079ead5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103d98b00>]}
+[0m14:28:31.650925 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e468bbb3-e033-4fa8-9c18-3fb73079ead5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10adb0f30>]}
+[0m14:28:31.651698 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m14:28:31.735346 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m14:28:31.736008 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m14:28:31.736234 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'e468bbb3-e033-4fa8-9c18-3fb73079ead5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ad44e50>]}
+[0m14:28:32.342508 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e468bbb3-e033-4fa8-9c18-3fb73079ead5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b248f50>]}
+[0m14:28:32.384230 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/siddharthkaushal/Demos/telecom wholesale/wholesale_dbt/target/manifest.json
+[0m14:28:32.386427 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/siddharthkaushal/Demos/telecom wholesale/wholesale_dbt/target/semantic_manifest.json
+[0m14:28:32.402173 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e468bbb3-e033-4fa8-9c18-3fb73079ead5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b449fd0>]}
+[0m14:28:32.402448 [info ] [MainThread]: Found 15 models, 10 data tests, 8 sources, 480 macros
+[0m14:28:32.402625 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e468bbb3-e033-4fa8-9c18-3fb73079ead5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b266dd0>]}
+[0m14:28:32.403779 [info ] [MainThread]: 
+[0m14:28:32.403978 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m14:28:32.404115 [info ] [MainThread]: 
+[0m14:28:32.404349 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m14:28:32.406601 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_telco_demo'
+[0m14:28:32.412142 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_telco_demo'
+[0m14:28:32.464136 [debug] [ThreadPool]: Using snowflake connection "list_telco_demo"
+[0m14:28:32.464402 [debug] [ThreadPool]: Using snowflake connection "list_telco_demo"
+[0m14:28:32.464553 [debug] [ThreadPool]: On list_telco_demo: show terse schemas in database telco_demo
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "sfseeurope-skaushal", "target_name": "dev", "connection_name": "list_telco_demo"} */
+[0m14:28:32.464698 [debug] [ThreadPool]: On list_telco_demo: show terse schemas in database telco_demo
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "sfseeurope-skaushal", "target_name": "dev", "connection_name": "list_telco_demo"} */
+[0m14:28:32.464832 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:28:32.464954 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:28:35.108059 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: show terse schemas in database telco_demo
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "sfseeurope-skaushal", "target_name": "dev", "connection_name": "list_telco_demo"} */
+[0m14:28:35.108796 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m14:28:35.109070 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_schemas
+[0m14:28:35.109244 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m14:28:35.110034 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: show terse schemas in database telco_demo
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "sfseeurope-skaushal", "target_name": "dev", "connection_name": "list_telco_demo"} */
+[0m14:28:35.110266 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m14:28:35.110548 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_schemas
+[0m14:28:35.110724 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m14:28:35.111343 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:28:35.111558 [debug] [MainThread]: Connection 'list_telco_demo' was left open.
+[0m14:28:35.111724 [debug] [MainThread]: On list_telco_demo: No close available on handle
+[0m14:28:35.111868 [debug] [MainThread]: Connection 'list_telco_demo' was left open.
+[0m14:28:35.112013 [debug] [MainThread]: On list_telco_demo: No close available on handle
+[0m14:28:35.112151 [info ] [MainThread]: 
+[0m14:28:35.112333 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 2.71 seconds (2.71s).
+[0m14:28:35.112586 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Database error while listing schemas in database "telco_demo"
+  Database Error
+    390190 (08001): Failed to connect to DB: sfseeurope-skaushal.snowflakecomputing.com:443, There was an error related to the SAML Identity Provider account parameter. Contact Snowflake support.
+[0m14:28:35.116346 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 5.8995194, "process_in_blocks": "0", "process_kernel_time": 0.731623, "process_mem_max_rss": "253902848", "process_out_blocks": "0", "process_user_time": 2.247456}
+[0m14:28:35.116592 [debug] [MainThread]: Command `dbt run` failed at 14:28:35.116544 after 5.90 seconds
+[0m14:28:35.116798 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1048522d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e1828e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1142062b0>]}
+[0m14:28:35.116992 [debug] [MainThread]: Flushing usage events
+[0m14:28:35.739482 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:29:00.755219 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108198d70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1090b7890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1090b7b10>]}
+
+
+============================== 14:29:00.759013 | 0f01dbcb-1bdf-4dad-bac0-3b67faf26c6f ==============================
+[0m14:29:00.759013 [info ] [MainThread]: Running with dbt=1.10.13
+[0m14:29:00.759353 [debug] [MainThread]: running dbt with arguments {'introspect': 'True', 'log_path': '/Users/siddharthkaushal/Demos/telecom wholesale/wholesale_dbt/logs', 'empty': 'False', 'partial_parse': 'True', 'version_check': 'True', 'target_path': 'None', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'use_experimental_parser': 'False', 'log_format': 'default', 'quiet': 'False', 'use_colors': 'True', 'fail_fast': 'False', 'profiles_dir': '/Users/siddharthkaushal/.dbt', 'static_parser': 'True', 'write_json': 'True', 'indirect_selection': 'eager', 'debug': 'False', 'no_print': 'None', 'invocation_command': 'dbt run --profiles-dir /Users/siddharthkaushal/.dbt', 'warn_error': 'None', 'printer_width': '80', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'cache_selected_only': 'False'}
+[0m14:29:01.476555 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "sfseeurope-skaushal", target "dev" invalid: 'account' is a required property
+[0m14:29:01.479962 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.7708146, "process_in_blocks": "0", "process_kernel_time": 0.332147, "process_mem_max_rss": "198656000", "process_out_blocks": "0", "process_user_time": 0.99673}
+[0m14:29:01.480204 [debug] [MainThread]: Command `dbt run` failed at 14:29:01.480153 after 0.77 seconds
+[0m14:29:01.480384 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f5096e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f52c710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f439260>]}
+[0m14:29:01.480581 [debug] [MainThread]: Flushing usage events
+[0m14:29:02.124183 [debug] [MainThread]: An error was encountered while trying to flush usage events

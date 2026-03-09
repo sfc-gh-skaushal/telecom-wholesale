@@ -1,0 +1,48 @@
+version: 2
+
+models:
+  - name: dim_partner
+    description: Partner dimension with credit profiles
+    columns:
+      - name: partner_id
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_time
+    description: Time dimension
+    columns:
+      - name: date_id
+        tests:
+          - unique
+          - not_null
+
+  - name: fact_invoice_ar
+    description: AR invoices fact table
+    columns:
+      - name: invoice_id
+        tests:
+          - unique
+          - not_null
+
+  - name: fact_invoice_ar_line
+    description: Invoice line items with validation status
+    columns:
+      - name: invoice_line_id
+        tests:
+          - unique
+          - not_null
+
+  - name: fact_usage_daily
+    description: Daily usage aggregates
+
+  - name: fact_payment_ar
+    description: AR payments fact table
+    columns:
+      - name: payment_id
+        tests:
+          - unique
+          - not_null
+
+  - name: fact_ar_position_daily
+    description: Daily AR aging snapshot
